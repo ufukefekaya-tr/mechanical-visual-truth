@@ -1,0 +1,916 @@
+{
+  "actual": {
+    "bbox": {
+      "max": [
+        180.0,
+        110.0,
+        90.0
+      ],
+      "min": [
+        -180.0,
+        -110.0,
+        -26.0
+      ]
+    },
+    "edge_count": 180,
+    "face_count": 108,
+    "solid_count": 22,
+    "solids": [
+      {
+        "bbox": {
+          "max": [
+            180.0,
+            110.0,
+            8.0
+          ],
+          "min": [
+            -180.0,
+            -110.0,
+            -8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 1267200.0
+      },
+      {
+        "bbox": {
+          "max": [
+            -133.0,
+            -68.0,
+            -8.0
+          ],
+          "min": [
+            -157.0,
+            -92.0,
+            -26.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8143.008158104743
+      },
+      {
+        "bbox": {
+          "max": [
+            -133.0,
+            92.0,
+            -8.0
+          ],
+          "min": [
+            -157.0,
+            68.0,
+            -26.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8143.008158104743
+      },
+      {
+        "bbox": {
+          "max": [
+            157.0,
+            -68.0,
+            -8.0
+          ],
+          "min": [
+            133.0,
+            -92.0,
+            -26.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8143.008158104743
+      },
+      {
+        "bbox": {
+          "max": [
+            157.0,
+            92.0,
+            -8.0
+          ],
+          "min": [
+            133.0,
+            68.0,
+            -26.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8143.008158104743
+      },
+      {
+        "bbox": {
+          "max": [
+            150.0,
+            -53.0,
+            30.0
+          ],
+          "min": [
+            -150.0,
+            -63.0,
+            20.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 23561.944901923453
+      },
+      {
+        "bbox": {
+          "max": [
+            -137.0,
+            -44.0,
+            24.0
+          ],
+          "min": [
+            -163.0,
+            -72.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 11648.000000000002
+      },
+      {
+        "bbox": {
+          "max": [
+            163.0,
+            -44.0,
+            24.0
+          ],
+          "min": [
+            137.0,
+            -72.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 11648.000000000002
+      },
+      {
+        "bbox": {
+          "max": [
+            -40.0,
+            -46.0,
+            36.0
+          ],
+          "min": [
+            -90.0,
+            -70.0,
+            28.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 9600.0
+      },
+      {
+        "bbox": {
+          "max": [
+            150.0,
+            63.0,
+            30.0
+          ],
+          "min": [
+            -150.0,
+            53.0,
+            20.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 23561.944901923453
+      },
+      {
+        "bbox": {
+          "max": [
+            -137.0,
+            72.0,
+            24.0
+          ],
+          "min": [
+            -163.0,
+            44.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 11648.000000000002
+      },
+      {
+        "bbox": {
+          "max": [
+            163.0,
+            72.0,
+            24.0
+          ],
+          "min": [
+            137.0,
+            44.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 11648.000000000002
+      },
+      {
+        "bbox": {
+          "max": [
+            -40.0,
+            70.0,
+            36.0
+          ],
+          "min": [
+            -90.0,
+            46.0,
+            28.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 9600.0
+      },
+      {
+        "bbox": {
+          "max": [
+            -25.0,
+            78.0,
+            48.0
+          ],
+          "min": [
+            -105.0,
+            -78.0,
+            36.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 149760.0
+      },
+      {
+        "bbox": {
+          "max": [
+            -43.0,
+            22.0,
+            82.0
+          ],
+          "min": [
+            -87.0,
+            -22.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 51698.048707473645
+      },
+      {
+        "bbox": {
+          "max": [
+            -56.0,
+            9.0,
+            90.0
+          ],
+          "min": [
+            -74.0,
+            -9.0,
+            82.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 2035.7520395261863
+      },
+      {
+        "bbox": {
+          "max": [
+            -147.0,
+            15.0,
+            26.0
+          ],
+          "min": [
+            -163.0,
+            -15.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8640.0
+      },
+      {
+        "bbox": {
+          "max": [
+            163.0,
+            15.0,
+            26.0
+          ],
+          "min": [
+            147.0,
+            -15.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8640.0
+      },
+      {
+        "bbox": {
+          "max": [
+            -86.0,
+            -44.0,
+            54.0
+          ],
+          "min": [
+            -94.0,
+            -52.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 301.59289474462014
+      },
+      {
+        "bbox": {
+          "max": [
+            -86.0,
+            52.0,
+            54.0
+          ],
+          "min": [
+            -94.0,
+            44.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 301.59289474462014
+      },
+      {
+        "bbox": {
+          "max": [
+            -36.0,
+            -44.0,
+            54.0
+          ],
+          "min": [
+            -44.0,
+            -52.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 301.59289474462014
+      },
+      {
+        "bbox": {
+          "max": [
+            -36.0,
+            52.0,
+            54.0
+          ],
+          "min": [
+            -44.0,
+            44.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 301.59289474462014
+      }
+    ],
+    "units": "mm",
+    "valid": true,
+    "volume_mm3": 1634668.0947622443
+  },
+  "bbox_max_delta_mm": 0.0,
+  "failures": [],
+  "geometry_boolean_checked": true,
+  "matches": [
+    {
+      "actual_index": 0,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 0,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 1,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 1,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 1.8189894035458565e-12
+    },
+    {
+      "actual_index": 2,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 2,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 1.8189894035458565e-12
+    },
+    {
+      "actual_index": 3,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 3,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 1.8189894035458565e-12
+    },
+    {
+      "actual_index": 4,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 4,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 1.8189894035458565e-12
+    },
+    {
+      "actual_index": 5,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 5,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 6,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 6,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 7,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 7,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 8,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 8,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 9,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 9,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 10,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 10,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 11,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 11,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 12,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 12,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 13,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 13,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 14,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 14,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 7.275957614183426e-12
+    },
+    {
+      "actual_index": 15,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 15,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 16,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 16,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 17,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 17,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 18,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 18,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 5.684341886080802e-14
+    },
+    {
+      "actual_index": 19,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 19,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 5.684341886080802e-14
+    },
+    {
+      "actual_index": 20,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 20,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    },
+    {
+      "actual_index": 21,
+      "bbox_max_delta_mm": 0.0,
+      "reference_index": 21,
+      "symmetric_difference_mm3": 0.0,
+      "volume_delta_mm3": 0.0
+    }
+  ],
+  "reference": {
+    "bbox": {
+      "max": [
+        180.0,
+        110.0,
+        90.0
+      ],
+      "min": [
+        -180.0,
+        -110.0,
+        -26.0
+      ]
+    },
+    "edge_count": 180,
+    "face_count": 108,
+    "solid_count": 22,
+    "solids": [
+      {
+        "bbox": {
+          "max": [
+            180.0,
+            110.0,
+            8.0
+          ],
+          "min": [
+            -180.0,
+            -110.0,
+            -8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 1267200.0
+      },
+      {
+        "bbox": {
+          "max": [
+            -133.0,
+            -68.0,
+            -8.0
+          ],
+          "min": [
+            -157.0,
+            -92.0,
+            -26.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8143.008158104742
+      },
+      {
+        "bbox": {
+          "max": [
+            -133.0,
+            92.0,
+            -8.0
+          ],
+          "min": [
+            -157.0,
+            68.0,
+            -26.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8143.008158104742
+      },
+      {
+        "bbox": {
+          "max": [
+            157.0,
+            -68.0,
+            -8.0
+          ],
+          "min": [
+            133.0,
+            -92.0,
+            -26.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8143.008158104742
+      },
+      {
+        "bbox": {
+          "max": [
+            157.0,
+            92.0,
+            -8.0
+          ],
+          "min": [
+            133.0,
+            68.0,
+            -26.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8143.008158104742
+      },
+      {
+        "bbox": {
+          "max": [
+            150.0,
+            -53.0,
+            30.0
+          ],
+          "min": [
+            -150.0,
+            -63.0,
+            20.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 23561.944901923453
+      },
+      {
+        "bbox": {
+          "max": [
+            -137.0,
+            -44.0,
+            24.0
+          ],
+          "min": [
+            -163.0,
+            -72.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 11648.000000000002
+      },
+      {
+        "bbox": {
+          "max": [
+            163.0,
+            -44.0,
+            24.0
+          ],
+          "min": [
+            137.0,
+            -72.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 11648.000000000002
+      },
+      {
+        "bbox": {
+          "max": [
+            -40.0,
+            -46.0,
+            36.0
+          ],
+          "min": [
+            -90.0,
+            -70.0,
+            28.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 9600.0
+      },
+      {
+        "bbox": {
+          "max": [
+            150.0,
+            63.0,
+            30.0
+          ],
+          "min": [
+            -150.0,
+            53.0,
+            20.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 23561.944901923453
+      },
+      {
+        "bbox": {
+          "max": [
+            -137.0,
+            72.0,
+            24.0
+          ],
+          "min": [
+            -163.0,
+            44.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 11648.000000000002
+      },
+      {
+        "bbox": {
+          "max": [
+            163.0,
+            72.0,
+            24.0
+          ],
+          "min": [
+            137.0,
+            44.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 11648.000000000002
+      },
+      {
+        "bbox": {
+          "max": [
+            -40.0,
+            70.0,
+            36.0
+          ],
+          "min": [
+            -90.0,
+            46.0,
+            28.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 9600.0
+      },
+      {
+        "bbox": {
+          "max": [
+            -25.0,
+            78.0,
+            48.0
+          ],
+          "min": [
+            -105.0,
+            -78.0,
+            36.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 149760.0
+      },
+      {
+        "bbox": {
+          "max": [
+            -43.0,
+            22.0,
+            82.0
+          ],
+          "min": [
+            -87.0,
+            -22.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 51698.04870747364
+      },
+      {
+        "bbox": {
+          "max": [
+            -56.0,
+            9.0,
+            90.0
+          ],
+          "min": [
+            -74.0,
+            -9.0,
+            82.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 2035.7520395261863
+      },
+      {
+        "bbox": {
+          "max": [
+            -147.0,
+            15.0,
+            26.0
+          ],
+          "min": [
+            -163.0,
+            -15.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8640.0
+      },
+      {
+        "bbox": {
+          "max": [
+            163.0,
+            15.0,
+            26.0
+          ],
+          "min": [
+            147.0,
+            -15.0,
+            8.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 8640.0
+      },
+      {
+        "bbox": {
+          "max": [
+            -86.0,
+            -44.0,
+            54.0
+          ],
+          "min": [
+            -94.0,
+            -52.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 301.5928947446202
+      },
+      {
+        "bbox": {
+          "max": [
+            -86.0,
+            52.0,
+            54.0
+          ],
+          "min": [
+            -94.0,
+            44.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 301.5928947446202
+      },
+      {
+        "bbox": {
+          "max": [
+            -36.0,
+            -44.0,
+            54.0
+          ],
+          "min": [
+            -44.0,
+            -52.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 301.59289474462014
+      },
+      {
+        "bbox": {
+          "max": [
+            -36.0,
+            52.0,
+            54.0
+          ],
+          "min": [
+            -44.0,
+            44.0,
+            48.0
+          ]
+        },
+        "valid": true,
+        "volume_mm3": 301.59289474462014
+      }
+    ],
+    "units": "mm",
+    "valid": true,
+    "volume_mm3": 1634668.0947622443
+  },
+  "status": "PASS",
+  "tolerances": {
+    "linear_mm": 2e-05,
+    "relative_volume": 1e-08,
+    "volume_mm3": 0.0001
+  },
+  "volume_delta_mm3": 0.0
+}

@@ -1,0 +1,9 @@
+Copyright 2026 Ufuk Efe Kaya
+
+Mechanical Visual Truth is available under either the MIT License
+(LICENSE-MIT) or the Apache License, Version 2.0 (LICENSE-APACHE),
+at your option. SPDX-License-Identifier: MIT OR Apache-2.0
+
+This choice covers original code, synthetic example geometry, documentation,
+and generated example media in this repository. Third-party dependencies
+retain their own licenses; see NOTICE.

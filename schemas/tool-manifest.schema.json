@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "type": "object",
+  "required": ["name", "version", "entrypoint", "side_effect", "timeout_seconds", "retry_limit", "enabled", "healthcheck"],
+  "properties": {
+    "name": {"type": "string"}, "version": {"type": "string"}, "entrypoint": {"type": "string"},
+    "side_effect": {"enum": ["read", "write-local", "external", "destructive"]},
+    "timeout_seconds": {"type": "integer", "minimum": 1}, "retry_limit": {"type": "integer", "minimum": 0, "maximum": 5},
+    "enabled": {"type": "boolean"}, "healthcheck": {"type": "string"}, "skills": {"type": "array"}
+  }
+}

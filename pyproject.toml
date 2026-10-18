@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mechanical-visual-truth"
+version = "0.2.0"
+description = "Contract-driven mechanical CAD, proof rendering, motion audit, and presentation tooling."
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+license-files = ["LICENSE-MIT", "LICENSE-APACHE", "NOTICE"]
+authors = [{name = "Ufuk Efe Kaya"}]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "cadquery==2.8.0",
+  "imageio-ffmpeg==0.6.0",
+  "jsonschema==4.25.1",
+  "numpy==2.5.2",
+  "Pillow==12.3.0",
+  "PyYAML==6.0.3",
+  "vtk==9.6.2",
+  "mcp==2.2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.0.2"]
+
+[project.scripts]
+mvt = "mvt.cli.main:main"
+mvt-mcp = "mvt.mcp_server:main"
+
+[project.urls]
+Repository = "https://github.com/ufukefekaya-tr/mechanical-visual-truth"
+Issues = "https://github.com/ufukefekaya-tr/mechanical-visual-truth/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mvt"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"schemas" = "mvt/data/schemas"
+"examples" = "mvt/data/examples"
+"skills" = "mvt/data/skills"
+"tools/registry.yaml" = "mvt/data/tools/registry.yaml"
+"governance/templates" = "mvt/data/governance/templates"
+"governance/prompts/templates" = "mvt/data/governance/prompts/templates"
+"governance/rules/registry.yaml" = "mvt/data/governance/rules/registry.yaml"
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/schemas", "/examples", "/skills", "/tools", "/governance", "/scripts", "/tests", "/docs", "/README.md", "/LICENSE*", "/NOTICE", "/pyproject.toml", "/AGENTS.md", "/requirements.lock"]
+exclude = ["**/runs", "**/__pycache__", "**/*.sqlite3*", "/docs/assets", "/governance/evals", "/governance/promotions", "/governance/rollback", "/governance/versions", "/governance/prompts/current.md", "/governance/prompts/versions"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

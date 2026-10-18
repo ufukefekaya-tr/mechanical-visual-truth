@@ -1,0 +1,63 @@
+project:
+  id: linear-actuator
+  revision: r1
+  units: mm
+  title: Compact screw actuator
+  provenance:
+  - kind: synthetic-public-example
+    source: original MVT demonstration geometry
+    method: created from scratch from generic primitives; no customer designs, vendor CAD, source paths, or prior
+      project dimensions
+    purpose: demonstrate declarative geometry, STEP, proof renders, and audit behavior
+coordinate_system:
+  x: assembly length, right positive
+  y: assembly depth, rear positive
+  z: vertical, up positive
+envelope: [390, 190, 180]
+commercial_status: not_applicable
+entities:
+  - {id: bed, class: base_plate, primitive: box, position: [0, 0, -10], size: [340, 145, 18], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: end.block.0, class: end_support, primitive: box, position: [-132, 0, 26], size: [24, 112, 54], material: painted_aluminum, color: [0.04, 0.43, 0.45]}
+  - {id: support.bolt.0.0, class: fastener, primitive: cylinder, position: [-132, -38, 55], radius: 4.5, height: 5, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: support.bolt.0.1, class: fastener, primitive: cylinder, position: [-132, 38, 55], radius: 4.5, height: 5, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: end.block.1, class: end_support, primitive: box, position: [118, 0, 26], size: [24, 112, 54], material: painted_aluminum, color: [0.04, 0.43, 0.45]}
+  - {id: support.bolt.1.0, class: fastener, primitive: cylinder, position: [118, -38, 55], radius: 4.5, height: 5, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: support.bolt.1.1, class: fastener, primitive: cylinder, position: [118, 38, 55], radius: 4.5, height: 5, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: guide.0, class: guide_rail, primitive: cylinder, position: [-7, -38, 30], radius: 6, height: 250, axis: x, material: steel, color: [0.68, 0.74, 0.78]}
+  - {id: guide.1, class: guide_rail, primitive: cylinder, position: [-7, 38, 30], radius: 6, height: 250, axis: x, material: steel, color: [0.68, 0.74, 0.78]}
+  - {id: screw, class: lead_screw_envelope, primitive: cylinder, position: [-7, 0, 30], radius: 5, height: 250, axis: x, material: brass, color: [0.88, 0.57, 0.16]}
+  - {id: slider, class: slider, primitive: box, position: [-30, 0, 34], size: [52, 104, 40], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: slider.cap, class: mounting_plate, primitive: box, position: [-30, 0, 58], size: [72, 124, 8], material: painted_aluminum, color: [0.04, 0.43, 0.45]}
+  - {id: motor, class: motor_envelope, primitive: box, position: [149, 0, 30], size: [38, 58, 58], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: motor.end, class: motor_end_cap, primitive: box, position: [171, 0, 30], size: [6, 54, 54], material: painted_aluminum, color: [0.68, 0.74, 0.78]}
+  - {id: slider.bolt.0.0, class: fastener, primitive: cylinder, position: [-52, -43, 64], radius: 4, height: 4, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: slider.bolt.0.1, class: fastener, primitive: cylinder, position: [-52, 43, 64], radius: 4, height: 4, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: slider.bolt.1.0, class: fastener, primitive: cylinder, position: [-8, -43, 64], radius: 4, height: 4, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: slider.bolt.1.1, class: fastener, primitive: cylinder, position: [-8, 43, 64], radius: 4, height: 4, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: foot.0.0, class: foot, primitive: cylinder, position: [-148, -55, -24], radius: 10, height: 10, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.0.1, class: foot, primitive: cylinder, position: [-148, 55, -24], radius: 10, height: 10, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.1.0, class: foot, primitive: cylinder, position: [148, -55, -24], radius: 10, height: 10, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.1.1, class: foot, primitive: cylinder, position: [148, 55, -24], radius: 10, height: 10, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+requirements:
+  counts:
+    base_plate: 1
+    end_support: 2
+    fastener: 8
+    guide_rail: 2
+    lead_screw_envelope: 1
+    slider: 1
+    mounting_plate: 1
+    motor_envelope: 1
+    motor_end_cap: 1
+    foot: 4
+  clearances:
+  - id: slider-to-bed
+    a: slider
+    b: bed
+    minimum: 15
+cameras:
+  - {id: isometric, position: [520, -560, 410], focal_point: [0, 0, 18], up: [0, 0, 1], projection: parallel, parallel_scale: 158, size: [1280, 800]}
+  - {id: top, position: [0, 0, 1000], focal_point: [0, 0, 18], up: [0, 1, 0], projection: parallel, parallel_scale: 129.56, size: [1280, 800]}
+  - {id: front, position: [0, -1000, 18], focal_point: [0, 0, 18], up: [0, 0, 1], projection: parallel, parallel_scale: 126.4, size: [1280, 800]}
+gates:
+  PASS: declared counts, envelope, and explicit clearances pass; manufacturing is outside this example scope

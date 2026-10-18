@@ -1,0 +1,19 @@
+Mechanical Visual Truth
+Copyright 2026 Ufuk Efe Kaya
+SPDX-License-Identifier: MIT OR Apache-2.0
+
+Original code, documentation, synthetic examples and example media are
+available under MIT or Apache-2.0, at the recipient's option.
+
+This distribution uses independently installed third-party libraries. Those
+libraries are not relicensed by this notice. Their notices and terms continue
+to apply, including CadQuery (Apache-2.0), Open CASCADE Technology
+(LGPL-2.1 with its additional exception), VTK (BSD-3-Clause), NumPy
+(BSD-3-Clause), Pillow (HPND), PyYAML (MIT), jsonschema (MIT),
+imageio-ffmpeg (BSD-2-Clause), and the MCP Python SDK (MIT).
+FFmpeg binaries and enabled codecs have their own distribution terms;
+see the imageio-ffmpeg/FFmpeg documentation for the installed build.
+
+No vendor CAD, customer machine geometry, private conversations, runtime
+credentials, or private project histories are included. No patent registration
+or grant is asserted by this copyright and license notice.

@@ -1,0 +1,56 @@
+version: 1
+tools:
+  - name: contract.validate
+    version: 0.2.0
+    entrypoint: mvt contract validate
+    side_effect: read
+    timeout_seconds: 30
+    retry_limit: 0
+    enabled: true
+    healthcheck: mvt doctor
+    skills: [mechanical-visual-truth]
+  - name: geometry.build
+    version: 0.2.0
+    entrypoint: mvt build
+    side_effect: write-local
+    timeout_seconds: 180
+    retry_limit: 0
+    enabled: true
+    healthcheck: mvt doctor
+    skills: [mechanical-visual-truth]
+  - name: proof.render
+    version: 0.2.0
+    entrypoint: mvt render
+    side_effect: write-local
+    timeout_seconds: 300
+    retry_limit: 1
+    enabled: true
+    healthcheck: mvt doctor
+    skills: [mechanical-visual-truth]
+  - name: motion.animate
+    version: 0.2.0
+    entrypoint: mvt animate build
+    side_effect: write-local
+    timeout_seconds: 600
+    retry_limit: 0
+    enabled: true
+    healthcheck: mvt doctor
+    skills: [mechanical-visual-truth]
+  - name: index.query
+    version: 0.2.0
+    entrypoint: mvt index query
+    side_effect: read
+    timeout_seconds: 30
+    retry_limit: 0
+    enabled: true
+    healthcheck: mvt index rebuild
+    skills: [mvt-governance]
+  - name: kaizen.promote
+    version: 0.2.0
+    entrypoint: mvt kaizen promote
+    side_effect: write-local
+    timeout_seconds: 120
+    retry_limit: 0
+    enabled: true
+    healthcheck: mvt tool validate
+    skills: [mvt-governance]

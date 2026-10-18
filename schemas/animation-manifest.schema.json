@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema", "type": "object",
+  "required": ["sequence", "truth_mode", "contract_hash", "model_hash", "fps", "frame_count", "camera", "artifacts", "motion_audit"],
+  "properties": {
+    "sequence": {"type": "string"}, "truth_mode": {"enum": ["deterministic_cad", "presentation_only_2_5d"]},
+    "contract_hash": {"type": "string"}, "model_hash": {"type": "string"}, "fps": {"type": "integer"},
+    "frame_count": {"type": "integer"}, "camera": {"type": "string"}, "artifacts": {"type": "array"},
+    "motion_audit": {"type": "object"}
+  }
+}

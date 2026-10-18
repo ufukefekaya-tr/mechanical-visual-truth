@@ -1,0 +1,144 @@
+{
+  "class_counts": {
+    "board": 1,
+    "connector_envelope": 1,
+    "control_index": 1,
+    "control_knob": 1,
+    "display_envelope": 1,
+    "display_lens": 1,
+    "foot": 4,
+    "module_cap": 1,
+    "module_envelope": 1,
+    "shell_panel": 8,
+    "standoff": 4,
+    "station": 0
+  },
+  "concept_status": "NOT_REQUESTED",
+  "contract_hash": "deb0c16d826dda777b61711427f574ed4155143029a930dbab045e460fa85719",
+  "entity_count": 24,
+  "findings": [
+    {
+      "gate": "entity-identity",
+      "status": "PASS"
+    },
+    {
+      "gate": "entity-coverage",
+      "missing": [],
+      "status": "PASS",
+      "unexpected": []
+    },
+    {
+      "gate": "brep-validity",
+      "invalid": [],
+      "status": "PASS"
+    },
+    {
+      "actual": 8,
+      "class": "shell_panel",
+      "expected": 8,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "display_envelope",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "display_lens",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "control_knob",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "control_index",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "board",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "module_envelope",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "module_cap",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "connector_envelope",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "class": "standoff",
+      "expected": 4,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "class": "foot",
+      "expected": 4,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "gate": "envelope",
+      "origin": [
+        -135.0,
+        -110.0,
+        -75.0
+      ],
+      "outside": [],
+      "status": "PASS"
+    },
+    {
+      "actual": 52.0,
+      "distance_mm": 52.0,
+      "gate": "clearance",
+      "intersection_mm3": 0.0,
+      "method": "brep",
+      "minimum": 50,
+      "rule": "module-to-right-wall",
+      "status": "PASS"
+    }
+  ],
+  "geometry_status": "PASS",
+  "limitations": [
+    "Nominal CAD geometry and declared rules only; no load, tolerance, manufacturing, hardware or safety qualification.",
+    "Only declared static entity pairs are checked for clearance/interference."
+  ],
+  "model_hash": "c4553a90df78b9cb4c35b8995adef64a1641853b7f234b863de458e21bf8c266",
+  "physical_status": "YELLOW",
+  "safety_status": "YELLOW",
+  "status": "PASS",
+  "validation_tier": "geometry",
+  "warnings": []
+}

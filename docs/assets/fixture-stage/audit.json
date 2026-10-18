@@ -1,0 +1,128 @@
+{
+  "class_counts": {
+    "base_plate": 1,
+    "bearing_carrier": 2,
+    "carriage": 1,
+    "demonstration_payload": 2,
+    "end_stop": 2,
+    "fastener": 4,
+    "foot": 4,
+    "guide_rail": 2,
+    "rail_support": 4,
+    "station": 0
+  },
+  "concept_status": "NOT_REQUESTED",
+  "contract_hash": "88b523993ee4343835a5265a7498498bb79bd95c45ef142d7f642b074af055cb",
+  "entity_count": 22,
+  "findings": [
+    {
+      "gate": "entity-identity",
+      "status": "PASS"
+    },
+    {
+      "gate": "entity-coverage",
+      "missing": [],
+      "status": "PASS",
+      "unexpected": []
+    },
+    {
+      "gate": "brep-validity",
+      "invalid": [],
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "base_plate",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "class": "foot",
+      "expected": 4,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "class": "guide_rail",
+      "expected": 2,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "class": "rail_support",
+      "expected": 4,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "class": "bearing_carrier",
+      "expected": 2,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "carriage",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "class": "demonstration_payload",
+      "expected": 2,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "class": "end_stop",
+      "expected": 2,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "class": "fastener",
+      "expected": 4,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "gate": "envelope",
+      "origin": [
+        -200.0,
+        -130.0,
+        -110.0
+      ],
+      "outside": [],
+      "status": "PASS"
+    },
+    {
+      "actual": 28.0,
+      "distance_mm": 28.0,
+      "gate": "clearance",
+      "intersection_mm3": 0.0,
+      "method": "brep",
+      "minimum": 28,
+      "rule": "carriage-above-base",
+      "status": "PASS"
+    }
+  ],
+  "geometry_status": "PASS",
+  "limitations": [
+    "Nominal CAD geometry and declared rules only; no load, tolerance, manufacturing, hardware or safety qualification.",
+    "Only declared static entity pairs are checked for clearance/interference."
+  ],
+  "model_hash": "0dbe0690ebfc1d357e097ff66e7b2597182a7bc070f0902595ef0393f4c92934",
+  "physical_status": "YELLOW",
+  "safety_status": "YELLOW",
+  "status": "PASS",
+  "validation_tier": "geometry",
+  "warnings": []
+}

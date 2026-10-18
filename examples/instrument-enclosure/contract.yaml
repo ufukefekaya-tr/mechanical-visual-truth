@@ -1,0 +1,66 @@
+project:
+  id: instrument-enclosure
+  revision: r1
+  units: mm
+  title: Open instrumentation enclosure
+  provenance:
+  - kind: synthetic-public-example
+    source: original MVT demonstration geometry
+    method: created from scratch from generic primitives; no customer designs, vendor CAD, source paths, or prior
+      project dimensions
+    purpose: demonstrate declarative geometry, STEP, proof renders, and audit behavior
+coordinate_system:
+  x: assembly length, right positive
+  y: assembly depth, rear positive
+  z: vertical, up positive
+envelope: [270, 220, 150]
+commercial_status: not_applicable
+entities:
+  - {id: floor, class: shell_panel, primitive: box, position: [0, 0, -35], size: [220, 160, 4], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: rear, class: shell_panel, primitive: box, position: [0, 78, 6], size: [220, 4, 78], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: left, class: shell_panel, primitive: box, position: [-108, 0, 6], size: [4, 152, 78], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: right, class: shell_panel, primitive: box, position: [108, 0, 6], size: [4, 152, 78], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: front.lower, class: shell_panel, primitive: box, position: [0, -78, -21], size: [212, 4, 24], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: front.upper, class: shell_panel, primitive: box, position: [0, -78, 37], size: [212, 4, 16], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: front.left, class: shell_panel, primitive: box, position: [-88, -78, 8], size: [36, 4, 42], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: front.right, class: shell_panel, primitive: box, position: [83, -78, 8], size: [46, 4, 42], material: painted_aluminum, color: [0.84, 0.86, 0.83]}
+  - {id: display, class: display_envelope, primitive: box, position: [-5, -77, 10], size: [130, 5, 38], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: display.glass, class: display_lens, primitive: box, position: [-18, -80, 8], size: [91, 1, 23], material: painted_aluminum, color: [0.04, 0.43, 0.45]}
+  - {id: knob, class: control_knob, primitive: cylinder, position: [82, -84, 8], radius: 11, height: 12, axis: y, material: polymer, color: [0.94, 0.32, 0.08]}
+  - {id: knob.index, class: control_index, primitive: cylinder, position: [82, -91, 14], radius: 2, height: 2, axis: y, material: polymer, color: [0.13, 0.17, 0.2]}
+  - {id: circuit.board, class: board, primitive: box, position: [0, 3, -21], size: [156, 114, 2], material: fr4, color: [0.04, 0.43, 0.45]}
+  - {id: module, class: module_envelope, primitive: box, position: [24, 20, -8], size: [60, 38, 24], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: module.cap, class: module_cap, primitive: box, position: [24, 20, 5], size: [56, 34, 2], material: painted_aluminum, color: [0.68, 0.74, 0.78]}
+  - {id: connector, class: connector_envelope, primitive: box, position: [-54, 14, -12], size: [22, 30, 16], material: polymer, color: [0.94, 0.32, 0.08]}
+  - {id: standoff.0.0, class: standoff, primitive: cylinder, position: [-73, -50, -27], radius: 3.5, height: 12, axis: z, material: brass, color: [0.88, 0.57, 0.16]}
+  - {id: standoff.0.1, class: standoff, primitive: cylinder, position: [-73, 50, -27], radius: 3.5, height: 12, axis: z, material: brass, color: [0.88, 0.57, 0.16]}
+  - {id: standoff.1.0, class: standoff, primitive: cylinder, position: [73, -50, -27], radius: 3.5, height: 12, axis: z, material: brass, color: [0.88, 0.57, 0.16]}
+  - {id: standoff.1.1, class: standoff, primitive: cylinder, position: [73, 50, -27], radius: 3.5, height: 12, axis: z, material: brass, color: [0.88, 0.57, 0.16]}
+  - {id: foot.0.0, class: foot, primitive: cylinder, position: [-88, -58, -42], radius: 8, height: 10, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.0.1, class: foot, primitive: cylinder, position: [-88, 58, -42], radius: 8, height: 10, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.1.0, class: foot, primitive: cylinder, position: [88, -58, -42], radius: 8, height: 10, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.1.1, class: foot, primitive: cylinder, position: [88, 58, -42], radius: 8, height: 10, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+requirements:
+  counts:
+    shell_panel: 8
+    display_envelope: 1
+    display_lens: 1
+    control_knob: 1
+    control_index: 1
+    board: 1
+    module_envelope: 1
+    module_cap: 1
+    connector_envelope: 1
+    standoff: 4
+    foot: 4
+  clearances:
+  - id: module-to-right-wall
+    a: module
+    b: right
+    minimum: 50
+cameras:
+  - {id: isometric, position: [520, -560, 410], focal_point: [0, 0, 0], up: [0, 0, 1], projection: parallel, parallel_scale: 140, size: [1280, 800]}
+  - {id: top, position: [0, 0, 1000], focal_point: [0, 0, 0], up: [0, 1, 0], projection: parallel, parallel_scale: 114.8, size: [1280, 800]}
+  - {id: front, position: [0, -1000, 0], focal_point: [0, 0, 0], up: [0, 0, 1], projection: parallel, parallel_scale: 112.0, size: [1280, 800]}
+gates:
+  PASS: declared counts, envelope, and explicit clearances pass; manufacturing is outside this example scope

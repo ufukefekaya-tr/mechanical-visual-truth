@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["run_id", "created_at", "project_id", "contract_hash", "status", "artifacts"],
+  "properties": {
+    "run_id": {"type": "string"}, "created_at": {"type": "string"}, "project_id": {"type": "string"},
+    "contract_hash": {"type": "string"}, "model_hash": {"type": ["string", "null"]},
+    "status": {"enum": ["PASS", "YELLOW", "RED", "IN_PROGRESS"]},
+    "tools": {"type": "object"}, "artifacts": {"type": "array"}, "audit": {"type": "object"},
+    "parent_run_id": {"type": ["string", "null"]}
+  }
+}

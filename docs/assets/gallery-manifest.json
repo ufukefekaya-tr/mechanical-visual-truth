@@ -1,0 +1,215 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1744,
+      "path": "docs/assets/fixture-stage/animation-manifest.json",
+      "sha256": "d3273376fc2aa9999900837b915ab497a37fb1a731279c695fb69166cfc7cc3a"
+    },
+    {
+      "bytes": 2687,
+      "path": "docs/assets/fixture-stage/audit.json",
+      "sha256": "5a01d9a877b0eb71b00e1d19008715074a406e5f7f5bbd46748838c402af6453"
+    },
+    {
+      "bytes": 68284,
+      "path": "docs/assets/fixture-stage/drawing.svg",
+      "sha256": "f1e2278a029fe22f848afddbdb6d3bb65758cda4e359fcd3ee6eacbfcc8491dc"
+    },
+    {
+      "bytes": 273328,
+      "path": "docs/assets/fixture-stage/fixture-stage.step",
+      "sha256": "3251d07e9abc09fc7fc6a4528dc1a57be24802d7fef74b6a66dfb34077b6262a"
+    },
+    {
+      "bytes": 14513,
+      "path": "docs/assets/fixture-stage/front.png",
+      "sha256": "04e0273984d6f0139e8ba52f0d5d33be68ac60a40e788bbaf75bb27fb609380e"
+    },
+    {
+      "bytes": 60485,
+      "path": "docs/assets/fixture-stage/isometric.png",
+      "sha256": "ab6fddb37bdca9748c40151067320ea3bcca982542bb42ff3ea1886e33b173e4"
+    },
+    {
+      "bytes": 97496,
+      "path": "docs/assets/fixture-stage/shuttle.mp4",
+      "sha256": "c03fc8a6582542c38437ec6bd0494dd1b564feecf19f3821c53ede5e2e366ffd"
+    },
+    {
+      "bytes": 139370,
+      "path": "docs/assets/fixture-stage/shuttle_contact_sheet.jpg",
+      "sha256": "a1086bbd7f499b475516d3aa3fbf97dfa041f47ed930a52e4c387f1b99e3918e"
+    },
+    {
+      "bytes": 572649,
+      "path": "docs/assets/fixture-stage/shuttle_preview.gif",
+      "sha256": "a1efe6e51655f3b8a265e81f65e650c51a7610bce606f042f28f9d5c78ded3ab"
+    },
+    {
+      "bytes": 17053,
+      "path": "docs/assets/fixture-stage/step-verification.json",
+      "sha256": "29eca0700d00dc1d7f6aa90dabf2a163beff53e3f4089a36bf2941c102ab4eee"
+    },
+    {
+      "bytes": 16245,
+      "path": "docs/assets/fixture-stage/top.png",
+      "sha256": "2977e674105eacb686f049a7f8419c5c53c3906cc6db6ae618f2c16da60daf43"
+    },
+    {
+      "bytes": 159993,
+      "path": "docs/assets/gallery-overview.png",
+      "sha256": "efa25d47b6d29c950c159fe9f81190aee86f7fbc2dc8260f6a7bffa8c4bbe3b7"
+    },
+    {
+      "bytes": 3001,
+      "path": "docs/assets/instrument-enclosure/audit.json",
+      "sha256": "23d48f11c20813247901a81965959556ba897058eb0bfe5e9e0647163bfff14c"
+    },
+    {
+      "bytes": 25742,
+      "path": "docs/assets/instrument-enclosure/drawing.svg",
+      "sha256": "97c0ebb8462204db4201ed59287741f23df967a002dfdee4d7e2bc01dac52e5d"
+    },
+    {
+      "bytes": 12927,
+      "path": "docs/assets/instrument-enclosure/front.png",
+      "sha256": "32f3acd97615056b352c6d9739b03522ae6e71c8027c088b42c14bc2de714614"
+    },
+    {
+      "bytes": 322512,
+      "path": "docs/assets/instrument-enclosure/instrument-enclosure.step",
+      "sha256": "4901fb3af6a7bedd8c1752bf05c7757e2420f008755218fd6a2e1576b4343f12"
+    },
+    {
+      "bytes": 38244,
+      "path": "docs/assets/instrument-enclosure/isometric.png",
+      "sha256": "dbd86aca621ec749cbac872da648760b1817c35758f6d89fe27d5359d512c85b"
+    },
+    {
+      "bytes": 18461,
+      "path": "docs/assets/instrument-enclosure/step-verification.json",
+      "sha256": "4f7ab49f8b192750735fc7cc44a3d047b23236d48964aa20a5735e4456900243"
+    },
+    {
+      "bytes": 11806,
+      "path": "docs/assets/instrument-enclosure/top.png",
+      "sha256": "4b65aad40739ed2ce52c116d5349d9e4dc4fcfa45a42f6b904577c8c29a16b17"
+    },
+    {
+      "bytes": 2834,
+      "path": "docs/assets/linear-actuator/audit.json",
+      "sha256": "3b8d5decb882d401172bf6c2ba02c438ba078c0dc238732d6906b20e11e71235"
+    },
+    {
+      "bytes": 61172,
+      "path": "docs/assets/linear-actuator/drawing.svg",
+      "sha256": "62087a931cfab4b4843b311ee1739eeb36f1cfc1da8c397395ff47aef9fc40e0"
+    },
+    {
+      "bytes": 12715,
+      "path": "docs/assets/linear-actuator/front.png",
+      "sha256": "6a606a65c8485beab58a2a15098fbf45161d7f7f806bfb3ee11b7de863d6cb50"
+    },
+    {
+      "bytes": 61661,
+      "path": "docs/assets/linear-actuator/isometric.png",
+      "sha256": "92d54ba5f752c2de01ab7c64c8b432110881b3b94067346fdf607ed37a00a319"
+    },
+    {
+      "bytes": 249780,
+      "path": "docs/assets/linear-actuator/linear-actuator.step",
+      "sha256": "81f2bc2ca2a471a523042f257a0013f7b94ece9d696025a56c1e92c8b9364796"
+    },
+    {
+      "bytes": 17062,
+      "path": "docs/assets/linear-actuator/step-verification.json",
+      "sha256": "68f4416f5de24037f9e045c054cb8a45e1d32bb17a37b977d4f74d15d24d9625"
+    },
+    {
+      "bytes": 15866,
+      "path": "docs/assets/linear-actuator/top.png",
+      "sha256": "6cb0b3c157d6dec31d39ce9c8d184eea78e22d7b5d2f82709fde31d1ab50934e"
+    }
+  ],
+  "examples": [
+    {
+      "animation": "docs/assets/fixture-stage/shuttle_preview.gif",
+      "audit_status": "PASS",
+      "contract": "examples/fixture-stage/contract.yaml",
+      "contract_hash": "88b523993ee4343835a5265a7498498bb79bd95c45ef142d7f642b074af055cb",
+      "drawing": "drawing.svg",
+      "entity_count": 22,
+      "geometry_status": "PASS",
+      "id": "fixture-stage",
+      "model_hash": "0dbe0690ebfc1d357e097ff66e7b2597182a7bc070f0902595ef0393f4c92934",
+      "motion_audit_status": "PASS",
+      "notes": "Coupled carriage + payload motion",
+      "physical_status": "YELLOW",
+      "safety_status": "YELLOW",
+      "source": "synthetic-public-example",
+      "step_verification_status": "PASS",
+      "title": "Two-rail fixture stage",
+      "views": [
+        "isometric",
+        "top",
+        "front"
+      ]
+    },
+    {
+      "audit_status": "PASS",
+      "contract": "examples/linear-actuator/contract.yaml",
+      "contract_hash": "0b704bc177c12839bcf8c63bc805e65dfa8447dcbd9643dfff0146fa6a628270",
+      "drawing": "drawing.svg",
+      "entity_count": 22,
+      "geometry_status": "PASS",
+      "id": "linear-actuator",
+      "model_hash": "c41c260880109a4fad533a9f6d22d09954d0ccfa7e957df3221022244a20d420",
+      "notes": "Guide rods, screw envelope, and carriage",
+      "physical_status": "YELLOW",
+      "safety_status": "YELLOW",
+      "source": "synthetic-public-example",
+      "step_verification_status": "PASS",
+      "title": "Compact screw actuator",
+      "views": [
+        "isometric",
+        "top",
+        "front"
+      ]
+    },
+    {
+      "audit_status": "PASS",
+      "contract": "examples/instrument-enclosure/contract.yaml",
+      "contract_hash": "deb0c16d826dda777b61711427f574ed4155143029a930dbab045e460fa85719",
+      "drawing": "drawing.svg",
+      "entity_count": 24,
+      "geometry_status": "PASS",
+      "id": "instrument-enclosure",
+      "model_hash": "c4553a90df78b9cb4c35b8995adef64a1641853b7f234b863de458e21bf8c266",
+      "notes": "Shell panels, controls, and internal module",
+      "physical_status": "YELLOW",
+      "safety_status": "YELLOW",
+      "source": "synthetic-public-example",
+      "step_verification_status": "PASS",
+      "title": "Open instrumentation enclosure",
+      "views": [
+        "isometric",
+        "top",
+        "front"
+      ]
+    }
+  ],
+  "provenance": {
+    "geometry": "Original primitive geometry declared in the bundled example contracts.",
+    "rendering": "MVT proof renderer; no image generation or geometry retouching.",
+    "reproduce": "python scripts/generate_gallery.py",
+    "scope": "Count, envelope, and explicitly declared clearance/motion constraints only; not manufacturing certification.",
+    "source": "synthetic-public-examples"
+  },
+  "schema_version": 1,
+  "tools": {
+    "cadquery": "2.8.0",
+    "mvt": "0.2.0",
+    "python": "3.12.3",
+    "vtk": "9.6.2"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "class_counts": {
+    "base_plate": 1,
+    "end_support": 2,
+    "fastener": 8,
+    "foot": 4,
+    "guide_rail": 2,
+    "lead_screw_envelope": 1,
+    "motor_end_cap": 1,
+    "motor_envelope": 1,
+    "mounting_plate": 1,
+    "slider": 1,
+    "station": 0
+  },
+  "concept_status": "NOT_REQUESTED",
+  "contract_hash": "0b704bc177c12839bcf8c63bc805e65dfa8447dcbd9643dfff0146fa6a628270",
+  "entity_count": 22,
+  "findings": [
+    {
+      "gate": "entity-identity",
+      "status": "PASS"
+    },
+    {
+      "gate": "entity-coverage",
+      "missing": [],
+      "status": "PASS",
+      "unexpected": []
+    },
+    {
+      "gate": "brep-validity",
+      "invalid": [],
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "base_plate",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "class": "end_support",
+      "expected": 2,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 8,
+      "class": "fastener",
+      "expected": 8,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 2,
+      "class": "guide_rail",
+      "expected": 2,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "lead_screw_envelope",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "slider",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "mounting_plate",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "motor_envelope",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 1,
+      "class": "motor_end_cap",
+      "expected": 1,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "actual": 4,
+      "class": "foot",
+      "expected": 4,
+      "gate": "count",
+      "status": "PASS"
+    },
+    {
+      "gate": "envelope",
+      "origin": [
+        -195.0,
+        -95.0,
+        -90.0
+      ],
+      "outside": [],
+      "status": "PASS"
+    },
+    {
+      "actual": 15.0,
+      "distance_mm": 15.0,
+      "gate": "clearance",
+      "intersection_mm3": 0.0,
+      "method": "brep",
+      "minimum": 15,
+      "rule": "slider-to-bed",
+      "status": "PASS"
+    }
+  ],
+  "geometry_status": "PASS",
+  "limitations": [
+    "Nominal CAD geometry and declared rules only; no load, tolerance, manufacturing, hardware or safety qualification.",
+    "Only declared static entity pairs are checked for clearance/interference."
+  ],
+  "model_hash": "c41c260880109a4fad533a9f6d22d09954d0ccfa7e957df3221022244a20d420",
+  "physical_status": "YELLOW",
+  "safety_status": "YELLOW",
+  "status": "PASS",
+  "validation_tier": "geometry",
+  "warnings": []
+}

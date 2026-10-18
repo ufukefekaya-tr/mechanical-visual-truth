@@ -1,0 +1,158 @@
+project:
+  id: fixture-stage
+  revision: r1
+  units: mm
+  title: Two-rail fixture stage
+  provenance:
+  - kind: synthetic-public-example
+    source: original MVT demonstration geometry
+    method: created from scratch from generic primitives; no customer designs, vendor CAD, source paths, or prior
+      project dimensions
+    purpose: demonstrate declarative geometry, STEP, proof renders, and audit behavior
+coordinate_system:
+  x: assembly length, right positive
+  y: assembly depth, rear positive
+  z: vertical, up positive
+envelope: [400, 260, 220]
+commercial_status: not_applicable
+entities:
+  - {id: base, class: base_plate, primitive: box, position: [0, 0, 0], size: [360, 220, 16], material: painted_aluminum, color: [0.055, 0.25, 0.46]}
+  - {id: foot.0.0, class: foot, primitive: cylinder, position: [-145, -80, -17], radius: 12, height: 18, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.0.1, class: foot, primitive: cylinder, position: [-145, 80, -17], radius: 12, height: 18, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.1.0, class: foot, primitive: cylinder, position: [145, -80, -17], radius: 12, height: 18, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: foot.1.1, class: foot, primitive: cylinder, position: [145, 80, -17], radius: 12, height: 18, axis: z, material: rubber, color: [0.08, 0.1, 0.12]}
+  - {id: rail.0, class: guide_rail, primitive: cylinder, position: [0, -58, 25], radius: 5, height: 300, axis: x, material: steel, color: [0.68, 0.74, 0.78]}
+  - {id: rail.support.0.0, class: rail_support, primitive: box, position: [-150, -58, 16], size: [26, 28, 16], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: rail.support.0.1, class: rail_support, primitive: box, position: [150, -58, 16], size: [26, 28, 16], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: bearing.0, class: bearing_carrier, primitive: box, position: [-65, -58, 32], size: [50, 24, 8], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: rail.1, class: guide_rail, primitive: cylinder, position: [0, 58, 25], radius: 5, height: 300, axis: x, material: steel, color: [0.68, 0.74, 0.78]}
+  - {id: rail.support.1.0, class: rail_support, primitive: box, position: [-150, 58, 16], size: [26, 28, 16], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: rail.support.1.1, class: rail_support, primitive: box, position: [150, 58, 16], size: [26, 28, 16], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: bearing.1, class: bearing_carrier, primitive: box, position: [-65, 58, 32], size: [50, 24, 8], material: painted_aluminum, color: [0.13, 0.17, 0.2]}
+  - {id: carriage, class: carriage, primitive: box, position: [-65, 0, 42], size: [80, 156, 12], material: painted_aluminum, color: [0.68, 0.74, 0.78]}
+  - {id: payload, class: demonstration_payload, primitive: cylinder, position: [-65, 0, 65], radius: 22, height: 34, axis: z, material: brass, color: [0.88, 0.57, 0.16]}
+  - {id: payload.cap, class: demonstration_payload, primitive: cylinder, position: [-65, 0, 86], radius: 9, height: 8, axis: z, material: brass, color: [0.88, 0.57, 0.16]}
+  - {id: stop.left, class: end_stop, primitive: box, position: [-155, 0, 17], size: [16, 30, 18], material: painted_aluminum, color: [0.88, 0.57, 0.16]}
+  - {id: stop.right, class: end_stop, primitive: box, position: [155, 0, 17], size: [16, 30, 18], material: painted_aluminum, color: [0.88, 0.57, 0.16]}
+  - {id: carriage.fastener.0.0, class: fastener, primitive: cylinder, position: [-90, -48, 51], radius: 4, height: 6, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: carriage.fastener.0.1, class: fastener, primitive: cylinder, position: [-90, 48, 51], radius: 4, height: 6, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: carriage.fastener.1.0, class: fastener, primitive: cylinder, position: [-40, -48, 51], radius: 4, height: 6, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+  - {id: carriage.fastener.1.1, class: fastener, primitive: cylinder, position: [-40, 48, 51], radius: 4, height: 6, axis: z, material: steel, color: [0.13, 0.17, 0.2]}
+requirements:
+  counts:
+    base_plate: 1
+    foot: 4
+    guide_rail: 2
+    rail_support: 4
+    bearing_carrier: 2
+    carriage: 1
+    demonstration_payload: 2
+    end_stop: 2
+    fastener: 4
+  clearances:
+  - id: carriage-above-base
+    a: carriage
+    b: base
+    minimum: 28
+cameras:
+  - {id: isometric, position: [520, -560, 410], focal_point: [0, 0, 25], up: [0, 0, 1], projection: parallel, parallel_scale: 175, size: [1280, 800]}
+  - {id: top, position: [0, 0, 1000], focal_point: [0, 0, 25], up: [0, 1, 0], projection: parallel, parallel_scale: 143.5, size: [1280, 800]}
+  - {id: front, position: [0, -1000, 25], focal_point: [0, 0, 25], up: [0, 0, 1], projection: parallel, parallel_scale: 140.0, size: [1280, 800]}
+gates:
+  PASS: declared counts, envelope, and explicit clearances pass; manufacturing is outside this example scope
+animations:
+- id: shuttle
+  truth_mode: deterministic_cad
+  camera: isometric
+  fps: 8
+  duration: 3
+  sample_every: 1
+  coupled_groups:
+  - [carriage, bearing.0, bearing.1, payload, payload.cap, carriage.fastener.0.0, carriage.fastener.0.1, carriage.fastener.1.0,
+    carriage.fastener.1.1]
+  collision_pairs:
+  - [carriage, stop.left]
+  - [carriage, stop.right]
+  - [payload, base]
+  keyframes:
+  - t: 0
+    entity: carriage
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: carriage
+    translation: [130, 0, 0]
+  - t: 3
+    entity: carriage
+    translation: [0, 0, 0]
+  - t: 0
+    entity: bearing.0
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: bearing.0
+    translation: [130, 0, 0]
+  - t: 3
+    entity: bearing.0
+    translation: [0, 0, 0]
+  - t: 0
+    entity: bearing.1
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: bearing.1
+    translation: [130, 0, 0]
+  - t: 3
+    entity: bearing.1
+    translation: [0, 0, 0]
+  - t: 0
+    entity: payload
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: payload
+    translation: [130, 0, 0]
+  - t: 3
+    entity: payload
+    translation: [0, 0, 0]
+  - t: 0
+    entity: payload.cap
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: payload.cap
+    translation: [130, 0, 0]
+  - t: 3
+    entity: payload.cap
+    translation: [0, 0, 0]
+  - t: 0
+    entity: carriage.fastener.0.0
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: carriage.fastener.0.0
+    translation: [130, 0, 0]
+  - t: 3
+    entity: carriage.fastener.0.0
+    translation: [0, 0, 0]
+  - t: 0
+    entity: carriage.fastener.0.1
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: carriage.fastener.0.1
+    translation: [130, 0, 0]
+  - t: 3
+    entity: carriage.fastener.0.1
+    translation: [0, 0, 0]
+  - t: 0
+    entity: carriage.fastener.1.0
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: carriage.fastener.1.0
+    translation: [130, 0, 0]
+  - t: 3
+    entity: carriage.fastener.1.0
+    translation: [0, 0, 0]
+  - t: 0
+    entity: carriage.fastener.1.1
+    translation: [0, 0, 0]
+  - t: 1.5
+    entity: carriage.fastener.1.1
+    translation: [130, 0, 0]
+  - t: 3
+    entity: carriage.fastener.1.1
+    translation: [0, 0, 0]
